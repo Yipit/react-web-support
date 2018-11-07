@@ -1,0 +1,45 @@
+{
+  "name": "react-web-support",
+  "version": "1.0.0",
+  "description": "react-web-support React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "private": true,
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo"
+  },
+  "dependencies": {
+    "emoji-js": "3.2.2",
+    "gh-pages": "^1.0.0",
+    "html2canvas": "^1.0.0-alpha.12",
+    "prop-types": "15.5.10",
+    "react-highlight.js": "1.0.5",
+    "socket.io-client": "2.0.3"
+  },
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {
+    "nwb": "0.17.x",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yipit/react-web-support.git"
+  },
+  "keywords": [
+    "react-component"
+  ]
+}
