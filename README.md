@@ -1,6 +1,6 @@
 # react-web-support
 
-`react-web-support` provides an intercom-like chat window that can be included easily in any project for free. It provides no messaging facilities, only the view component.
+`react-web-support` provides an intercom-like chat window that allows users to submit feedback, bugs, and feature requests. Tickets submitted automatically include a screenshot of the app for context.
 
 <a href="https://www.npmjs.com/package/react-chat-window" target="\_parent">
   <img alt="" src="https://img.shields.io/npm/dm/react-chat-window.svg" />
@@ -14,10 +14,8 @@
 ## Installation
 
 ```
-$ npm install git@github.com:Yipit/react-web-support.git
+$ npm install https://github.com/Yipit/react-web-support
 ```
-
-For more detailed examples see the demo folder.
 
 ## Components
 
