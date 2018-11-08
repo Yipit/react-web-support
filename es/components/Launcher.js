@@ -7,6 +7,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import ChatWindow from './ChatWindow';
+import defaultMessage from './Messages/DefaultMessage';
 import { sendEmail } from '../helpers';
 import html2canvas from 'html2canvas';
 import launcherIcon from './../assets/logo-no-bg.svg';
@@ -22,7 +23,7 @@ var Launcher = function (_Component) {
 
     _this.state = {
       launcherIcon: launcherIcon,
-      messageList: [],
+      messageList: [defaultMessage],
       isOpen: false
     };
     _this.handleClick = _this.handleClick.bind(_this);
@@ -167,7 +168,7 @@ Launcher.defaultProps = {
     teamName: 'YipitData'
   },
   newMessagesCount: 0,
-  showEmoji: true
+  showEmoji: false
 };
 
 export default Launcher;

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import ChatWindow from './ChatWindow';
+import defaultMessage from './Messages/DefaultMessage'
 import {sendEmail} from '../helpers'
 import html2canvas from 'html2canvas'
 import launcherIcon from './../assets/logo-no-bg.svg';
@@ -12,7 +13,7 @@ class Launcher extends Component {
     super();
     this.state = {
       launcherIcon,
-      messageList: [],
+      messageList: [defaultMessage],
       isOpen: false
     };
     this.handleClick = this.handleClick.bind(this)
@@ -147,7 +148,7 @@ Launcher.defaultProps = {
     teamName: 'YipitData'
   },
   newMessagesCount: 0,
-  showEmoji: true
+  showEmoji: false
 }
 
 export default Launcher;
