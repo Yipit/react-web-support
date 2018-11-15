@@ -55,7 +55,7 @@ var Launcher = function (_Component) {
     var url = window.location.href;
     var date = new Date().toLocaleString();
 
-    html2canvas(document.body, { scale: 0.4 }).then(function (canvas) {
+    html2canvas(document.body, { scale: parseFloat((600 / window.innerWidth).toFixed(2)) }).then(function (canvas) {
       var canvasElement = document.body.appendChild(canvas);
       var imageData = canvasElement.toDataURL().replace('data:image/png;base64,', '');
 

@@ -37,7 +37,10 @@ class Launcher extends Component {
     const url = window.location.href
     const date = (new Date()).toLocaleString()
 
-    html2canvas(document.body, {scale: 0.4}).then((canvas) => {
+    html2canvas(
+      document.body,
+      {scale: parseFloat((600 / window.innerWidth).toFixed(2))}
+    ).then((canvas) => {
       const canvasElement = document.body.appendChild(canvas);
       const imageData = canvasElement.toDataURL().replace('data:image/png;base64,', '')
 
